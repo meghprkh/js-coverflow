@@ -1,0 +1,39 @@
+{
+  "name": "coverflow",
+  "version": "1.0.0",
+  "description": "A JS library for creating a coverflow component",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "browserify --standalone coverflow index.js -t uglifyify | uglifyjs -c > dist/coverflow.min.js",
+    "build-debug": "browserify --standalone coverflow -d index.js -o dist/coverflow.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "coverflow",
+    "html5",
+    "css3"
+  ],
+  "author": "Megh Parikh <meghprkh@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "uglifyify": "^3.0.1",
+    "uglifyjs": "^2.4.10"
+  },
+  "dependencies": {
+    "uglifyify": "^3.0.1",
+    "browserify": "^12.0.1",
+    "uglifyjs": "^2.4.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meghprkh/js-coverflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meghprkh/js-coverflow/issues"
+  },
+  "homepage": "https://github.com/meghprkh/js-coverflow#readme"
+}
