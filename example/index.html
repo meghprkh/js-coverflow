@@ -20,7 +20,7 @@
   <script src="../dist/coverflow.js"></script>
   <script>
     coverflow.initialize('content', {
-      activeClick: function (index) {console.log('Active ' + index);},
+      onActiveClick: function (index) {console.log('Active ' + index);},
       onChange: function (index) {console.log('Changed ' + index);}
     });
   </script>
