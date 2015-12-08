@@ -3,7 +3,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no maximum-scale=1">
   <title>CoverFlow</title>
-  <link rel="stylesheet" href="../dist/style.css">
 </head>
 <body>
   <div id="content" style="width: 100%">
@@ -20,6 +19,7 @@
   <script src="../dist/coverflow.js"></script>
   <script>
     coverflow.initialize('content', {
+      maxHeight: 250,
       onActiveClick: function (index) {console.log('Active ' + index);},
       onChange: function (index) {console.log('Changed ' + index);}
     });
