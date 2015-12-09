@@ -1,6 +1,6 @@
 {
   "name": "coverflow",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A JS library for creating a coverflow component",
   "main": "index.js",
   "directories": {
@@ -9,6 +9,7 @@
   "scripts": {
     "build": "browserify --standalone coverflow index.js -t uglifyify | uglifyjs -c > dist/coverflow.min.js",
     "build-debug": "browserify --standalone coverflow -d index.js -o dist/coverflow.js",
+    "prepublish": "npm run build-debug && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
