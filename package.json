@@ -1,6 +1,6 @@
 {
   "name": "coverflow",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A JS library for creating a coverflow component",
   "main": "index.js",
   "directories": {
